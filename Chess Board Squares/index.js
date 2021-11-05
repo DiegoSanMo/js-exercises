@@ -42,3 +42,9 @@ function chessBoard(pole) {
 function isPair(num) {
   return num % 2 === 0;
 }
+
+
+// Best approach 
+const chessBoard = ([letter, rank]) => (
+	(letter.charCodeAt() % 2 === rank % 2) ? 'black' : 'white'
+);
